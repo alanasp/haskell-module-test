@@ -1,0 +1,137 @@
+
+==================== Parser AST ====================
+2018-06-12 17:32:04.611080193 UTC
+
+
+({ ModuleC.hs:1:1 }
+ (HsModule
+  (Just
+   ({ ModuleC.hs:1:8-14 }
+    {ModuleName: ModuleC}))
+  (Just
+   ({ ModuleC.hs:(1,15)-(3,1) }
+    [({ ModuleC.hs:2:5-12 }
+      (IEVar
+       (NoExt)
+       ({ ModuleC.hs:2:5-12 }
+        (IEName
+         ({ ModuleC.hs:2:5-12 }
+          (Unqual
+           {OccName: squareMe}))))))]))
+  [({ ModuleC.hs:5:1-14 }
+    (ImportDecl
+     (NoExt)
+     (NoSourceText)
+     ({ ModuleC.hs:5:8-14 }
+      {ModuleName: ModuleD})
+     (Nothing)
+     (False)
+     (False)
+     (False)
+     (False)
+     (Nothing)
+     (Nothing)))
+  ,({ ModuleC.hs:6:1-14 }
+    (ImportDecl
+     (NoExt)
+     (NoSourceText)
+     ({ ModuleC.hs:6:8-14 }
+      {ModuleName: ModuleE})
+     (Nothing)
+     (False)
+     (False)
+     (False)
+     (False)
+     (Nothing)
+     (Nothing)))]
+  [({ ModuleC.hs:8:1-22 }
+    (SigD
+     (NoExt)
+     (TypeSig
+      (NoExt)
+      [({ ModuleC.hs:8:1-8 }
+        (Unqual
+         {OccName: squareMe}))]
+      (HsWC
+       (NoExt)
+       (HsIB
+        (NoExt)
+        ({ ModuleC.hs:8:13-22 }
+         (HsFunTy
+          (NoExt)
+          ({ ModuleC.hs:8:13-15 }
+           (HsTyVar
+            (NoExt)
+            (NotPromoted)
+            ({ ModuleC.hs:8:13-15 }
+             (Unqual
+              {OccName: Int}))))
+          ({ ModuleC.hs:8:20-22 }
+           (HsTyVar
+            (NoExt)
+            (NotPromoted)
+            ({ ModuleC.hs:8:20-22 }
+             (Unqual
+              {OccName: Int})))))))))))
+  ,({ ModuleC.hs:9:1-16 }
+    (ValD
+     (NoExt)
+     (FunBind
+      (NoExt)
+      ({ ModuleC.hs:9:1-8 }
+       (Unqual
+        {OccName: squareMe}))
+      (MG
+       (NoExt)
+       ({ ModuleC.hs:9:1-16 }
+        [({ ModuleC.hs:9:1-16 }
+          (Match
+           (NoExt)
+           (FunRhs
+            ({ ModuleC.hs:9:1-8 }
+             (Unqual
+              {OccName: squareMe}))
+            (Prefix)
+            (NoSrcStrict))
+           [({ ModuleC.hs:9:10 }
+             (VarPat
+              (NoExt)
+              ({ ModuleC.hs:9:10 }
+               (Unqual
+                {OccName: x}))))]
+           (GRHSs
+            (NoExt)
+            [({ ModuleC.hs:9:12-16 }
+              (GRHS
+               (NoExt)
+               []
+               ({ ModuleC.hs:9:14-16 }
+                (OpApp
+                 (NoExt)
+                 ({ ModuleC.hs:9:14 }
+                  (HsVar
+                   (NoExt)
+                   ({ ModuleC.hs:9:14 }
+                    (Unqual
+                     {OccName: x}))))
+                 ({ ModuleC.hs:9:15 }
+                  (HsVar
+                   (NoExt)
+                   ({ ModuleC.hs:9:15 }
+                    (Unqual
+                     {OccName: *}))))
+                 ({ ModuleC.hs:9:16 }
+                  (HsVar
+                   (NoExt)
+                   ({ ModuleC.hs:9:16 }
+                    (Unqual
+                     {OccName: x}))))))))]
+            ({ <no location info> }
+             (EmptyLocalBinds
+              (NoExt))))))])
+       (FromSource))
+      (WpHole)
+      [])))]
+  (Nothing)
+  (Nothing)))
+

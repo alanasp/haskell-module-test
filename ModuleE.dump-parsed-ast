@@ -1,0 +1,114 @@
+
+==================== Parser AST ====================
+2018-06-12 17:32:04.58726796 UTC
+
+
+({ ModuleE.hs:1:1 }
+ (HsModule
+  (Just
+   ({ ModuleE.hs:1:8-14 }
+    {ModuleName: ModuleE}))
+  (Just
+   ({ ModuleE.hs:(1,15)-(5,1) }
+    [({ ModuleE.hs:2:5-57 }
+      (IEDocNamed
+       (NoExt)
+       "{-# DEPRECATED A constructor of E is deprecated #-}"))
+    ,({ ModuleE.hs:3:5-8 }
+      (IEThingWith
+       (NoExt)
+       ({ ModuleE.hs:3:5 }
+        (IEName
+         ({ ModuleE.hs:3:5 }
+          (Unqual
+           {OccName: E}))))
+       (NoIEWildcard)
+       [({ ModuleE.hs:3:7 }
+         (IEName
+          ({ ModuleE.hs:3:7 }
+           (Unqual
+            {OccName: A}))))]
+       []))
+    ,({ ModuleE.hs:4:5-8 }
+      (IEThingWith
+       (NoExt)
+       ({ ModuleE.hs:4:5 }
+        (IEName
+         ({ ModuleE.hs:4:5 }
+          (Unqual
+           {OccName: E}))))
+       (NoIEWildcard)
+       [({ ModuleE.hs:4:7 }
+         (IEName
+          ({ ModuleE.hs:4:7 }
+           (Unqual
+            {OccName: B}))))]
+       []))]))
+  []
+  [({ ModuleE.hs:7:1-32 }
+    (TyClD
+     (NoExt)
+     (DataDecl
+      (NoExt)
+      ({ ModuleE.hs:7:6 }
+       (Unqual
+        {OccName: E}))
+      (HsQTvs
+       (NoExt)
+       [])
+      (Prefix)
+      (HsDataDefn
+       (NoExt)
+       (DataType)
+       ({ <no location info> }
+        [])
+       (Nothing)
+       (Nothing)
+       [({ ModuleE.hs:7:10-16 }
+         (ConDeclH98
+          (NoExt)
+          ({ ModuleE.hs:7:10 }
+           (Unqual
+            {OccName: A}))
+          (False)
+          []
+          (Nothing)
+          (PrefixCon
+           [({ ModuleE.hs:7:12-16 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleE.hs:7:12-16 }
+               (Unqual
+                {OccName: Float}))))])
+          (Nothing)))
+       ,({ ModuleE.hs:7:20-32 }
+         (ConDeclH98
+          (NoExt)
+          ({ ModuleE.hs:7:20 }
+           (Unqual
+            {OccName: B}))
+          (False)
+          []
+          (Nothing)
+          (PrefixCon
+           [({ ModuleE.hs:7:22-26 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleE.hs:7:22-26 }
+               (Unqual
+                {OccName: Float}))))
+           ,({ ModuleE.hs:7:28-32 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleE.hs:7:28-32 }
+               (Unqual
+                {OccName: Float}))))])
+          (Nothing)))]
+       ({ <no location info> }
+        [])))))]
+  (Nothing)
+  (Nothing)))
+

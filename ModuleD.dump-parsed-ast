@@ -1,0 +1,92 @@
+
+==================== Parser AST ====================
+2018-06-12 17:32:04.528918667 UTC
+
+
+({ ModuleD.hs:1:1 }
+ (HsModule
+  (Just
+   ({ ModuleD.hs:1:8-14 }
+    {ModuleName: ModuleD}))
+  (Just
+   ({ ModuleD.hs:(1,15)-(4,1) }
+    [({ ModuleD.hs:2:5-40 }
+      (IEDocNamed
+       (NoExt)
+       "{-# DEPRECATED D is deprecated #-}"))
+    ,({ ModuleD.hs:3:5-9 }
+      (IEThingAll
+       (NoExt)
+       ({ ModuleD.hs:3:5 }
+        (IEName
+         ({ ModuleD.hs:3:5 }
+          (Unqual
+           {OccName: D}))))))]))
+  []
+  [({ ModuleD.hs:6:1-32 }
+    (TyClD
+     (NoExt)
+     (DataDecl
+      (NoExt)
+      ({ ModuleD.hs:6:6 }
+       (Unqual
+        {OccName: D}))
+      (HsQTvs
+       (NoExt)
+       [])
+      (Prefix)
+      (HsDataDefn
+       (NoExt)
+       (DataType)
+       ({ <no location info> }
+        [])
+       (Nothing)
+       (Nothing)
+       [({ ModuleD.hs:6:10-16 }
+         (ConDeclH98
+          (NoExt)
+          ({ ModuleD.hs:6:10 }
+           (Unqual
+            {OccName: A}))
+          (False)
+          []
+          (Nothing)
+          (PrefixCon
+           [({ ModuleD.hs:6:12-16 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleD.hs:6:12-16 }
+               (Unqual
+                {OccName: Float}))))])
+          (Nothing)))
+       ,({ ModuleD.hs:6:20-32 }
+         (ConDeclH98
+          (NoExt)
+          ({ ModuleD.hs:6:20 }
+           (Unqual
+            {OccName: B}))
+          (False)
+          []
+          (Nothing)
+          (PrefixCon
+           [({ ModuleD.hs:6:22-26 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleD.hs:6:22-26 }
+               (Unqual
+                {OccName: Float}))))
+           ,({ ModuleD.hs:6:28-32 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleD.hs:6:28-32 }
+               (Unqual
+                {OccName: Float}))))])
+          (Nothing)))]
+       ({ <no location info> }
+        [])))))]
+  (Nothing)
+  (Nothing)))
+

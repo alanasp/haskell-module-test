@@ -1,0 +1,182 @@
+
+==================== Parser AST ====================
+2018-06-12 17:32:04.649871785 UTC
+
+
+({ ModuleA.hs:1:1 }
+ (HsModule
+  (Just
+   ({ ModuleA.hs:1:8-14 }
+    {ModuleName: ModuleA}))
+  (Just
+   ({ ModuleA.hs:(1,15)-(5,1) }
+    [({ ModuleA.hs:2:5-10 }
+      (IEVar
+       (NoExt)
+       ({ ModuleA.hs:2:5-10 }
+        (IEName
+         ({ ModuleA.hs:2:5-10 }
+          (Unqual
+           {OccName: sqHypo}))))))
+    ,({ ModuleA.hs:3:5-32 }
+      (IEDocNamed
+       (NoExt)
+       "{-# DEPRECATED message #-}"))
+    ,({ ModuleA.hs:4:5-18 }
+      (IEModuleContents
+       (NoExt)
+       ({ ModuleA.hs:4:12-18 }
+        {ModuleName: ModuleC})))]))
+  [({ ModuleA.hs:7:1-14 }
+    (ImportDecl
+     (NoExt)
+     (NoSourceText)
+     ({ ModuleA.hs:7:8-14 }
+      {ModuleName: ModuleC})
+     (Nothing)
+     (False)
+     (False)
+     (False)
+     (False)
+     (Nothing)
+     (Nothing)))]
+  [({ ModuleA.hs:9:1-27 }
+    (SigD
+     (NoExt)
+     (TypeSig
+      (NoExt)
+      [({ ModuleA.hs:9:1-6 }
+        (Unqual
+         {OccName: sqHypo}))]
+      (HsWC
+       (NoExt)
+       (HsIB
+        (NoExt)
+        ({ ModuleA.hs:9:11-27 }
+         (HsFunTy
+          (NoExt)
+          ({ ModuleA.hs:9:11-13 }
+           (HsTyVar
+            (NoExt)
+            (NotPromoted)
+            ({ ModuleA.hs:9:11-13 }
+             (Unqual
+              {OccName: Int}))))
+          ({ ModuleA.hs:9:18-27 }
+           (HsFunTy
+            (NoExt)
+            ({ ModuleA.hs:9:18-20 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleA.hs:9:18-20 }
+               (Unqual
+                {OccName: Int}))))
+            ({ ModuleA.hs:9:25-27 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleA.hs:9:25-27 }
+               (Unqual
+                {OccName: Int})))))))))))))
+  ,({ ModuleA.hs:10:1-21 }
+    (SigD
+     (NoExt)
+     (InlineSig
+      (NoExt)
+      ({ ModuleA.hs:10:12-17 }
+       (Unqual
+        {OccName: sqHypo}))
+      (InlinePragma
+       (SourceText
+        "{-# INLINE")
+       (Inline)
+       (Nothing)
+       (AlwaysActive)
+       (FunLike)))))
+  ,({ ModuleA.hs:11:1-36 }
+    (ValD
+     (NoExt)
+     (FunBind
+      (NoExt)
+      ({ ModuleA.hs:11:1-6 }
+       (Unqual
+        {OccName: sqHypo}))
+      (MG
+       (NoExt)
+       ({ ModuleA.hs:11:1-36 }
+        [({ ModuleA.hs:11:1-36 }
+          (Match
+           (NoExt)
+           (FunRhs
+            ({ ModuleA.hs:11:1-6 }
+             (Unqual
+              {OccName: sqHypo}))
+            (Prefix)
+            (NoSrcStrict))
+           [({ ModuleA.hs:11:8 }
+             (VarPat
+              (NoExt)
+              ({ ModuleA.hs:11:8 }
+               (Unqual
+                {OccName: a}))))
+           ,({ ModuleA.hs:11:10 }
+             (VarPat
+              (NoExt)
+              ({ ModuleA.hs:11:10 }
+               (Unqual
+                {OccName: b}))))]
+           (GRHSs
+            (NoExt)
+            [({ ModuleA.hs:11:12-36 }
+              (GRHS
+               (NoExt)
+               []
+               ({ ModuleA.hs:11:14-36 }
+                (OpApp
+                 (NoExt)
+                 ({ ModuleA.hs:11:14-23 }
+                  (HsApp
+                   (NoExt)
+                   ({ ModuleA.hs:11:14-21 }
+                    (HsVar
+                     (NoExt)
+                     ({ ModuleA.hs:11:14-21 }
+                      (Unqual
+                       {OccName: squareMe}))))
+                   ({ ModuleA.hs:11:23 }
+                    (HsVar
+                     (NoExt)
+                     ({ ModuleA.hs:11:23 }
+                      (Unqual
+                       {OccName: a}))))))
+                 ({ ModuleA.hs:11:25 }
+                  (HsVar
+                   (NoExt)
+                   ({ ModuleA.hs:11:25 }
+                    (Unqual
+                     {OccName: +}))))
+                 ({ ModuleA.hs:11:27-36 }
+                  (HsApp
+                   (NoExt)
+                   ({ ModuleA.hs:11:27-34 }
+                    (HsVar
+                     (NoExt)
+                     ({ ModuleA.hs:11:27-34 }
+                      (Unqual
+                       {OccName: squareMe}))))
+                   ({ ModuleA.hs:11:36 }
+                    (HsVar
+                     (NoExt)
+                     ({ ModuleA.hs:11:36 }
+                      (Unqual
+                       {OccName: b}))))))))))]
+            ({ <no location info> }
+             (EmptyLocalBinds
+              (NoExt))))))])
+       (FromSource))
+      (WpHole)
+      [])))]
+  (Nothing)
+  (Nothing)))
+

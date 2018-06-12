@@ -1,0 +1,185 @@
+
+==================== Parser AST ====================
+2018-06-12 17:32:04.635606114 UTC
+
+
+({ ModuleB.hs:1:1 }
+ (HsModule
+  (Just
+   ({ ModuleB.hs:1:8-14 }
+    {ModuleName: ModuleB}))
+  (Just
+   ({ ModuleB.hs:(1,15)-(5,1) }
+    [({ ModuleB.hs:2:5-45 }
+      (IEDocNamed
+       (NoExt)
+       "{-# DEPRECATED sqDist is deprecated #-}"))
+    ,({ ModuleB.hs:3:5-10 }
+      (IEVar
+       (NoExt)
+       ({ ModuleB.hs:3:5-10 }
+        (IEName
+         ({ ModuleB.hs:3:5-10 }
+          (Unqual
+           {OccName: sqDist}))))))
+    ,({ ModuleB.hs:4:5-18 }
+      (IEModuleContents
+       (NoExt)
+       ({ ModuleB.hs:4:12-18 }
+        {ModuleName: ModuleC})))]))
+  [({ ModuleB.hs:7:1-14 }
+    (ImportDecl
+     (NoExt)
+     (NoSourceText)
+     ({ ModuleB.hs:7:8-14 }
+      {ModuleName: ModuleC})
+     (Nothing)
+     (False)
+     (False)
+     (False)
+     (False)
+     (Nothing)
+     (Nothing)))]
+  [({ ModuleB.hs:9:1-48 }
+    (WarningD
+     (NoExt)
+     (Warnings
+      (NoExt)
+      (SourceText
+       "{-# DEPRECATED")
+      [({ ModuleB.hs:9:16-44 }
+        (Warning
+         (NoExt)
+         [({ ModuleB.hs:9:16-21 }
+           (Unqual
+            {OccName: sqDist}))]
+         (DeprecatedTxt
+          ({ <no location info> }
+           (NoSourceText))
+          [({ ModuleB.hs:9:23-44 }
+            (StringLiteral
+             (SourceText
+              "\"sqDist is deprecated\"")
+             {FastString: "sqDist is deprecated"}))])))])))
+  ,({ ModuleB.hs:10:1-27 }
+    (SigD
+     (NoExt)
+     (TypeSig
+      (NoExt)
+      [({ ModuleB.hs:10:1-6 }
+        (Unqual
+         {OccName: sqDist}))]
+      (HsWC
+       (NoExt)
+       (HsIB
+        (NoExt)
+        ({ ModuleB.hs:10:11-27 }
+         (HsFunTy
+          (NoExt)
+          ({ ModuleB.hs:10:11-13 }
+           (HsTyVar
+            (NoExt)
+            (NotPromoted)
+            ({ ModuleB.hs:10:11-13 }
+             (Unqual
+              {OccName: Int}))))
+          ({ ModuleB.hs:10:18-27 }
+           (HsFunTy
+            (NoExt)
+            ({ ModuleB.hs:10:18-20 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleB.hs:10:18-20 }
+               (Unqual
+                {OccName: Int}))))
+            ({ ModuleB.hs:10:25-27 }
+             (HsTyVar
+              (NoExt)
+              (NotPromoted)
+              ({ ModuleB.hs:10:25-27 }
+               (Unqual
+                {OccName: Int})))))))))))))
+  ,({ ModuleB.hs:11:1-29 }
+    (ValD
+     (NoExt)
+     (FunBind
+      (NoExt)
+      ({ ModuleB.hs:11:1-6 }
+       (Unqual
+        {OccName: sqDist}))
+      (MG
+       (NoExt)
+       ({ ModuleB.hs:11:1-29 }
+        [({ ModuleB.hs:11:1-29 }
+          (Match
+           (NoExt)
+           (FunRhs
+            ({ ModuleB.hs:11:1-6 }
+             (Unqual
+              {OccName: sqDist}))
+            (Prefix)
+            (NoSrcStrict))
+           [({ ModuleB.hs:11:8 }
+             (VarPat
+              (NoExt)
+              ({ ModuleB.hs:11:8 }
+               (Unqual
+                {OccName: a}))))
+           ,({ ModuleB.hs:11:10 }
+             (VarPat
+              (NoExt)
+              ({ ModuleB.hs:11:10 }
+               (Unqual
+                {OccName: b}))))]
+           (GRHSs
+            (NoExt)
+            [({ ModuleB.hs:11:12-29 }
+              (GRHS
+               (NoExt)
+               []
+               ({ ModuleB.hs:11:14-29 }
+                (OpApp
+                 (NoExt)
+                 ({ ModuleB.hs:11:14-25 }
+                  (OpApp
+                   (NoExt)
+                   ({ ModuleB.hs:11:14-21 }
+                    (HsVar
+                     (NoExt)
+                     ({ ModuleB.hs:11:14-21 }
+                      (Unqual
+                       {OccName: squareMe}))))
+                   ({ ModuleB.hs:11:23 }
+                    (HsVar
+                     (NoExt)
+                     ({ ModuleB.hs:11:23 }
+                      (Unqual
+                       {OccName: $}))))
+                   ({ ModuleB.hs:11:25 }
+                    (HsVar
+                     (NoExt)
+                     ({ ModuleB.hs:11:25 }
+                      (Unqual
+                       {OccName: b}))))))
+                 ({ ModuleB.hs:11:27 }
+                  (HsVar
+                   (NoExt)
+                   ({ ModuleB.hs:11:27 }
+                    (Unqual
+                     {OccName: -}))))
+                 ({ ModuleB.hs:11:29 }
+                  (HsVar
+                   (NoExt)
+                   ({ ModuleB.hs:11:29 }
+                    (Unqual
+                     {OccName: a}))))))))]
+            ({ <no location info> }
+             (EmptyLocalBinds
+              (NoExt))))))])
+       (FromSource))
+      (WpHole)
+      [])))]
+  (Nothing)
+  (Nothing)))
+

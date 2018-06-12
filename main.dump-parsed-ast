@@ -1,0 +1,502 @@
+
+==================== Parser AST ====================
+2018-06-12 17:32:04.665714077 UTC
+
+
+({ main.hs:1:1 }
+ (HsModule
+  (Nothing)
+  (Nothing)
+  [({ main.hs:1:1-14 }
+    (ImportDecl
+     (NoExt)
+     (NoSourceText)
+     ({ main.hs:1:8-14 }
+      {ModuleName: ModuleA})
+     (Nothing)
+     (False)
+     (False)
+     (False)
+     (False)
+     (Nothing)
+     (Nothing)))
+  ,({ main.hs:2:1-14 }
+    (ImportDecl
+     (NoExt)
+     (NoSourceText)
+     ({ main.hs:2:8-14 }
+      {ModuleName: ModuleB})
+     (Nothing)
+     (False)
+     (False)
+     (False)
+     (False)
+     (Nothing)
+     (Nothing)))]
+  [({ main.hs:(5,1)-(11,36) }
+    (ValD
+     (NoExt)
+     (FunBind
+      (NoExt)
+      ({ main.hs:5:1-4 }
+       (Unqual
+        {OccName: main}))
+      (MG
+       (NoExt)
+       ({ main.hs:(5,1)-(11,36) }
+        [({ main.hs:(5,1)-(11,36) }
+          (Match
+           (NoExt)
+           (FunRhs
+            ({ main.hs:5:1-4 }
+             (Unqual
+              {OccName: main}))
+            (Prefix)
+            (NoSrcStrict))
+           []
+           (GRHSs
+            (NoExt)
+            [({ main.hs:(5,6)-(11,36) }
+              (GRHS
+               (NoExt)
+               []
+               ({ main.hs:(5,8)-(11,36) }
+                (HsDo
+                 (NoExt)
+                 (DoExpr)
+                 ({ main.hs:(6,5)-(11,36) }
+                  [({ main.hs:6:5-16 }
+                    (BindStmt
+                     (NoExt)
+                     ({ main.hs:6:5 }
+                      (VarPat
+                       (NoExt)
+                       ({ main.hs:6:5 }
+                        (Unqual
+                         {OccName: a}))))
+                     ({ main.hs:6:10-16 }
+                      (HsVar
+                       (NoExt)
+                       ({ main.hs:6:10-16 }
+                        (Unqual
+                         {OccName: getLine}))))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))))
+                  ,({ main.hs:7:5-16 }
+                    (BindStmt
+                     (NoExt)
+                     ({ main.hs:7:5 }
+                      (VarPat
+                       (NoExt)
+                       ({ main.hs:7:5 }
+                        (Unqual
+                         {OccName: b}))))
+                     ({ main.hs:7:10-16 }
+                      (HsVar
+                       (NoExt)
+                       ({ main.hs:7:10-16 }
+                        (Unqual
+                         {OccName: getLine}))))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))))
+                  ,({ main.hs:8:5-49 }
+                    (BodyStmt
+                     (NoExt)
+                     ({ main.hs:8:5-49 }
+                      (OpApp
+                       (NoExt)
+                       ({ main.hs:8:5-9 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:8:5-9 }
+                          (Unqual
+                           {OccName: print}))))
+                       ({ main.hs:8:11 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:8:11 }
+                          (Unqual
+                           {OccName: $}))))
+                       ({ main.hs:8:13-49 }
+                        (HsApp
+                         (NoExt)
+                         ({ main.hs:8:13-34 }
+                          (HsApp
+                           (NoExt)
+                           ({ main.hs:8:13-18 }
+                            (HsVar
+                             (NoExt)
+                             ({ main.hs:8:13-18 }
+                              (Unqual
+                               {OccName: sqHypo}))))
+                           ({ main.hs:8:20-34 }
+                            (HsPar
+                             (NoExt)
+                             ({ main.hs:8:21-33 }
+                              (ExprWithTySig
+                               (HsWC
+                                (NoExt)
+                                (HsIB
+                                 (NoExt)
+                                 ({ main.hs:8:31-33 }
+                                  (HsTyVar
+                                   (NoExt)
+                                   (NotPromoted)
+                                   ({ main.hs:8:31-33 }
+                                    (Unqual
+                                     {OccName: Int}))))))
+                               ({ main.hs:8:21-26 }
+                                (HsApp
+                                 (NoExt)
+                                 ({ main.hs:8:21-24 }
+                                  (HsVar
+                                   (NoExt)
+                                   ({ main.hs:8:21-24 }
+                                    (Unqual
+                                     {OccName: read}))))
+                                 ({ main.hs:8:26 }
+                                  (HsVar
+                                   (NoExt)
+                                   ({ main.hs:8:26 }
+                                    (Unqual
+                                     {OccName: a}))))))))))))
+                         ({ main.hs:8:36-49 }
+                          (HsPar
+                           (NoExt)
+                           ({ main.hs:8:37-48 }
+                            (ExprWithTySig
+                             (HsWC
+                              (NoExt)
+                              (HsIB
+                               (NoExt)
+                               ({ main.hs:8:46-48 }
+                                (HsTyVar
+                                 (NoExt)
+                                 (NotPromoted)
+                                 ({ main.hs:8:46-48 }
+                                  (Unqual
+                                   {OccName: Int}))))))
+                             ({ main.hs:8:37-42 }
+                              (HsApp
+                               (NoExt)
+                               ({ main.hs:8:37-40 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:8:37-40 }
+                                  (Unqual
+                                   {OccName: read}))))
+                               ({ main.hs:8:42 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:8:42 }
+                                  (Unqual
+                                   {OccName: b}))))))))))))))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))))
+                  ,({ main.hs:9:5-49 }
+                    (BodyStmt
+                     (NoExt)
+                     ({ main.hs:9:5-49 }
+                      (OpApp
+                       (NoExt)
+                       ({ main.hs:9:5-9 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:9:5-9 }
+                          (Unqual
+                           {OccName: print}))))
+                       ({ main.hs:9:11 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:9:11 }
+                          (Unqual
+                           {OccName: $}))))
+                       ({ main.hs:9:13-49 }
+                        (HsApp
+                         (NoExt)
+                         ({ main.hs:9:13-34 }
+                          (HsApp
+                           (NoExt)
+                           ({ main.hs:9:13-18 }
+                            (HsVar
+                             (NoExt)
+                             ({ main.hs:9:13-18 }
+                              (Unqual
+                               {OccName: sqDist}))))
+                           ({ main.hs:9:20-34 }
+                            (HsPar
+                             (NoExt)
+                             ({ main.hs:9:21-33 }
+                              (ExprWithTySig
+                               (HsWC
+                                (NoExt)
+                                (HsIB
+                                 (NoExt)
+                                 ({ main.hs:9:31-33 }
+                                  (HsTyVar
+                                   (NoExt)
+                                   (NotPromoted)
+                                   ({ main.hs:9:31-33 }
+                                    (Unqual
+                                     {OccName: Int}))))))
+                               ({ main.hs:9:21-26 }
+                                (HsApp
+                                 (NoExt)
+                                 ({ main.hs:9:21-24 }
+                                  (HsVar
+                                   (NoExt)
+                                   ({ main.hs:9:21-24 }
+                                    (Unqual
+                                     {OccName: read}))))
+                                 ({ main.hs:9:26 }
+                                  (HsVar
+                                   (NoExt)
+                                   ({ main.hs:9:26 }
+                                    (Unqual
+                                     {OccName: a}))))))))))))
+                         ({ main.hs:9:36-49 }
+                          (HsPar
+                           (NoExt)
+                           ({ main.hs:9:37-48 }
+                            (ExprWithTySig
+                             (HsWC
+                              (NoExt)
+                              (HsIB
+                               (NoExt)
+                               ({ main.hs:9:46-48 }
+                                (HsTyVar
+                                 (NoExt)
+                                 (NotPromoted)
+                                 ({ main.hs:9:46-48 }
+                                  (Unqual
+                                   {OccName: Int}))))))
+                             ({ main.hs:9:37-42 }
+                              (HsApp
+                               (NoExt)
+                               ({ main.hs:9:37-40 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:9:37-40 }
+                                  (Unqual
+                                   {OccName: read}))))
+                               ({ main.hs:9:42 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:9:42 }
+                                  (Unqual
+                                   {OccName: b}))))))))))))))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))))
+                  ,({ main.hs:10:5-36 }
+                    (BodyStmt
+                     (NoExt)
+                     ({ main.hs:10:5-36 }
+                      (OpApp
+                       (NoExt)
+                       ({ main.hs:10:5-9 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:10:5-9 }
+                          (Unqual
+                           {OccName: print}))))
+                       ({ main.hs:10:11 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:10:11 }
+                          (Unqual
+                           {OccName: $}))))
+                       ({ main.hs:10:13-36 }
+                        (HsApp
+                         (NoExt)
+                         ({ main.hs:10:13-20 }
+                          (HsVar
+                           (NoExt)
+                           ({ main.hs:10:13-20 }
+                            (Unqual
+                             {OccName: squareMe}))))
+                         ({ main.hs:10:22-36 }
+                          (HsPar
+                           (NoExt)
+                           ({ main.hs:10:23-35 }
+                            (ExprWithTySig
+                             (HsWC
+                              (NoExt)
+                              (HsIB
+                               (NoExt)
+                               ({ main.hs:10:33-35 }
+                                (HsTyVar
+                                 (NoExt)
+                                 (NotPromoted)
+                                 ({ main.hs:10:33-35 }
+                                  (Unqual
+                                   {OccName: Int}))))))
+                             ({ main.hs:10:23-28 }
+                              (HsApp
+                               (NoExt)
+                               ({ main.hs:10:23-26 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:10:23-26 }
+                                  (Unqual
+                                   {OccName: read}))))
+                               ({ main.hs:10:28 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:10:28 }
+                                  (Unqual
+                                   {OccName: a}))))))))))))))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))))
+                  ,({ main.hs:11:5-36 }
+                    (BodyStmt
+                     (NoExt)
+                     ({ main.hs:11:5-36 }
+                      (OpApp
+                       (NoExt)
+                       ({ main.hs:11:5-9 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:11:5-9 }
+                          (Unqual
+                           {OccName: print}))))
+                       ({ main.hs:11:11 }
+                        (HsVar
+                         (NoExt)
+                         ({ main.hs:11:11 }
+                          (Unqual
+                           {OccName: $}))))
+                       ({ main.hs:11:13-36 }
+                        (HsApp
+                         (NoExt)
+                         ({ main.hs:11:13-20 }
+                          (HsVar
+                           (NoExt)
+                           ({ main.hs:11:13-20 }
+                            (Unqual
+                             {OccName: squareMe}))))
+                         ({ main.hs:11:22-36 }
+                          (HsPar
+                           (NoExt)
+                           ({ main.hs:11:23-35 }
+                            (ExprWithTySig
+                             (HsWC
+                              (NoExt)
+                              (HsIB
+                               (NoExt)
+                               ({ main.hs:11:33-35 }
+                                (HsTyVar
+                                 (NoExt)
+                                 (NotPromoted)
+                                 ({ main.hs:11:33-35 }
+                                  (Unqual
+                                   {OccName: Int}))))))
+                             ({ main.hs:11:23-28 }
+                              (HsApp
+                               (NoExt)
+                               ({ main.hs:11:23-26 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:11:23-26 }
+                                  (Unqual
+                                   {OccName: read}))))
+                               ({ main.hs:11:28 }
+                                (HsVar
+                                 (NoExt)
+                                 ({ main.hs:11:28 }
+                                  (Unqual
+                                   {OccName: b}))))))))))))))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))
+                     (SyntaxExpr
+                      (HsLit
+                       (NoExt)
+                       (HsString
+                        (NoSourceText)
+                        {FastString: "noSyntaxExpr"}))
+                      []
+                      (WpHole))))])))))]
+            ({ <no location info> }
+             (EmptyLocalBinds
+              (NoExt))))))])
+       (FromSource))
+      (WpHole)
+      [])))]
+  (Nothing)
+  (Nothing)))
+
